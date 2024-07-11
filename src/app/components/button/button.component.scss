@@ -1,0 +1,23 @@
+@import "../../../theme";
+
+.btn {
+  border: 1px solid #a4a7b6;
+  color: #a4a7b6;
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &--hover {
+    &:hover {
+      border-color: #fff;
+      color: #fff;
+      background-color: $hover-color;
+    }
+  }
+}
