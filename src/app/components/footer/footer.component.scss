@@ -12,26 +12,4 @@
   &__text {
     text-transform: uppercase;
   }
-
-  &__show-action-list-btn {
-    border: 1px solid #fff;
-    padding: 0.5rem 2rem;
-    background-color: transparent;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-
-    &:hover {
-      background-color: $hover-color;
-    }
-
-    svg {
-      width: 1.5rem;
-      height: 1.5rem;
-      transform: rotate(180deg);
-    }
-  }
 }
