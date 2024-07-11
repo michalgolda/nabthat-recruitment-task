@@ -1,0 +1,19 @@
+@import "../../../theme";
+
+.title {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+
+  &__text {
+    font-weight: 400;
+  }
+
+  &__decorator {
+    display: block;
+    width: 75%;
+    height: 1px;
+    background-color: $text-color;
+    margin: 0.5rem auto;
+  }
+}
