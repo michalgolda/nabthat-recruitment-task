@@ -2,7 +2,7 @@
 
 - [x] header przyklejony do topu
 - [x] logo w headerze linkuje do strony głównej
-- [] stopka zawsze na dole okna przeglądarki pomimo małej ilości treści
+- [x] stopka zawsze na dole okna przeglądarki pomimo małej ilości treści
 - [] każda osobna treść w ostatnim bloku powinna być objęta tagiem
 - [] w bloku pierwszym są radiobuttony, ich wybór a następnie kliknięcie przycisku w bloku drugim wykona akcję podmiany lub doklejenia tekstu w bloku ostatnim
 - [] pobieranie treści z pliku JSON
