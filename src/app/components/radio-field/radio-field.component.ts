@@ -10,4 +10,5 @@ import { Component, Input } from '@angular/core';
 export class RadioFieldComponent {
   @Input({ required: true }) label: string = '';
   @Input({ required: true }) name: string = '';
+  @Input({ required: true }) value: string = '';
 }
