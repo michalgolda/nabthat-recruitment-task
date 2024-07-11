@@ -12,11 +12,15 @@
   column-gap: 0.5rem;
   border-radius: 2px;
   cursor: pointer;
+  transition: all 0.25s;
 
-  &--hover {
+  &:hover {
+    border-color: #fff;
+    color: #fff;
+  }
+
+  &--bg-hover-effect {
     &:hover {
-      border-color: #fff;
-      color: #fff;
       background-color: $hover-color;
     }
   }
