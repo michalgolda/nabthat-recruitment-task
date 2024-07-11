@@ -10,6 +10,10 @@
   background-color: $primary-color;
 
   &__text {
-    text-transform: uppercase;
+    color: #282b31;
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
   }
 }
