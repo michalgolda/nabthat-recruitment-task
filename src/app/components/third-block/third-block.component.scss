@@ -1,0 +1,10 @@
+@import "../../../theme";
+
+:host {
+  width: 100%;
+}
+
+.content {
+  color: $light-grey-color;
+  text-align: center;
+}
