@@ -13,10 +13,6 @@
   align-items: center;
   justify-content: space-between;
 
-  &:has(.header__logo:hover) .header__text--author {
-    display: block;
-  }
-
   &__logo {
     width: 3rem;
     height: 3rem;
