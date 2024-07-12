@@ -22,5 +22,33 @@
         color: $light-grey-color;
       }
     }
+
+    &--copyright {
+      font-size: 1.5rem;
+      display: none;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 4rem;
+        height: 1px;
+        background-color: $dark-grey-color;
+        margin-left: 0.25rem;
+      }
+
+      &::before {
+        content: "";
+        width: 4rem;
+        height: 1px;
+        background-color: $dark-grey-color;
+        margin-right: 0.25rem;
+        display: block;
+      }
+
+      @include media-breakpoint-up(md) {
+        display: flex;
+        align-items: center;
+      }
+    }
   }
 }
