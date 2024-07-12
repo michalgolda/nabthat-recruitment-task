@@ -4,7 +4,8 @@
   width: 100%;
 }
 
-.content {
-  color: $light-grey-color;
-  text-align: center;
+.category-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
