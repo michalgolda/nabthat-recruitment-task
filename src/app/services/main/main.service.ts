@@ -54,6 +54,7 @@ export class MainService {
 
           if (existingCategory) {
             window.alert(`Category "${category.name}" already exists.`);
+            return;
           }
         }
 
