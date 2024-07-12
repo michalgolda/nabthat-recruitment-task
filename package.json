@@ -1,5 +1,5 @@
 {
-  "name": "nathab-recruitment-task",
+  "name": "nabthat-recruitment-task",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:nathab-recruitment-task": "node dist/nathab-recruitment-task/server/server.mjs",
+    "serve:ssr:nabthat-recruitment-task": "node dist/nabthat-recruitment-task/server/server.mjs",
     "prepare": "husky"
   },
   "private": true,
