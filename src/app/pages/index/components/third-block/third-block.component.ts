@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { BlockComponent } from '../block/block.component';
-import { CategoryComponent } from '../category/category.component';
-import type { Category } from '../../models/category.model';
-import { MainService } from '../../services/main/main.service';
+import { BlockComponent } from '@app/pages/index/components/block/block.component';
+import { CategoryComponent } from '@app/pages/index/components/category/category.component';
+import { MainService } from '@app/services/main/main.service';
 
 @Component({
   selector: 'app-third-block',

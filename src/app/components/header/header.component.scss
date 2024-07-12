@@ -17,6 +17,17 @@
   align-items: center;
   justify-content: space-between;
 
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+
+    @include media-breakpoint-up(md) {
+      column-gap: 2rem;
+    }
+  }
+
   &__logo {
     width: 3rem;
     height: 3rem;
@@ -62,5 +73,29 @@
 
   @include media-breakpoint-up(md) {
     height: 8.75rem;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  list-style: none;
+
+  @include media-breakpoint-up(md) {
+    column-gap: 2rem;
+  }
+
+  &__link {
+    color: $text-color;
+    text-decoration: none;
+
+    @include media-breakpoint-up(md) {
+      font-size: $h5-font-size;
+    }
+
+    &--active {
+      font-weight: bold;
+    }
   }
 }

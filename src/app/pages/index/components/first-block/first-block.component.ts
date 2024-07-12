@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { BlockComponent } from '../block/block.component';
-import { RadioFieldComponent } from '../radio-field/radio-field.component';
-import { MainService } from '../../services/main/main.service';
-import { CategoryGettingStrategy } from '../../models/state.model';
+import { BlockComponent } from '@app/pages/index/components/block/block.component';
+import { RadioFieldComponent } from '@app/components/radio-field/radio-field.component';
+import { MainService } from '@app/services/main/main.service';
+import { CategoryGettingStrategy } from '@app/models/state.model';
 
 @Component({
   selector: 'app-first-block',

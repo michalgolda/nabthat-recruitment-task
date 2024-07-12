@@ -1,7 +1,7 @@
-import { ChangeDetectorRef, Component } from '@angular/core';
-import { BlockComponent } from '../block/block.component';
-import { ButtonComponent } from '../button/button.component';
-import { MainService } from '../../services/main/main.service';
+import { Component } from '@angular/core';
+import { BlockComponent } from '@app/pages/index/components/block/block.component';
+import { ButtonComponent } from '@app/components/button/button.component';
+import { MainService } from '@app/services/main/main.service';
 
 @Component({
   selector: 'app-second-block',
