@@ -5,3 +5,19 @@ $body-background-color: #2a2d36;
 $hover-color: #e98300;
 $light-grey-color: #a4a7b6;
 $dark-grey-color: #282b31;
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@mixin media-breakpoint-up($name) {
+  $breakpoint: map-get($breakpoints, $name);
+
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
