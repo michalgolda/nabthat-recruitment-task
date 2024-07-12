@@ -1,5 +1,9 @@
 @import "../../../theme";
 
+:host {
+  z-index: 999;
+}
+
 .header {
   height: 5rem;
   width: 100%;
