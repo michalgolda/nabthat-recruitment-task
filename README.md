@@ -15,7 +15,7 @@
 - [] spełnienie zasady a11y
 - [x] logiczne wykorzystanie jednostek rem, em, vh, vw (w efekcie jak najmniejsze użycie jednostki px) - w taki sposób by w efekcie responsywność spełniona została jak najmniejszą ilością kodu.
 - [x] mobile first
-- [] doklejając treść sprawić by w ostatnim bloku treści były posortowane alfabetycznie
+- [x] doklejając treść sprawić by w ostatnim bloku treści były posortowane alfabetycznie
 - [x] przy doklejaniu treści w przypadku niemożliwości spełnienia warunku by była unikalna wyświetlić stosowny komunikat (np. alert/dialog/modal)
 - [] button w footerze ("pokaż") wysuwający ramkę bez użycia JSa
 - [x] automatyczny proces publikowania działającej aplikacji na platformie Vercel

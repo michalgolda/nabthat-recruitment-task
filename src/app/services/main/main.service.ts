@@ -60,6 +60,9 @@ export class MainService {
 
         if (allCategoriesIsAlreadyVisible) {
           this.state.visibleCategories.push(category);
+          this.state.visibleCategories = this.state.visibleCategories.sort(
+            (a, b) => a.name.localeCompare(b.name)
+          );
         } else {
           window.alert('All categories are already visible.');
         }
