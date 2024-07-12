@@ -1,19 +1,22 @@
 <app-block title="Blok pierwszy">
   <form>
     <app-radio-field
-      name="content-source"
+      name="category-getter-method"
       label="Opcja pierwsza"
-      value="first-content-source"
+      (input)="handleChangeCategoryGettingStrategy($event)"
+      [value]="categoryGettingStrategies.first"
     />
     <app-radio-field
-      name="content-source"
+      name="category-getter-method"
       label="Opcja druga"
-      value="second-content-source"
+      (input)="handleChangeCategoryGettingStrategy($event)"
+      [value]="categoryGettingStrategies.second"
     />
     <app-radio-field
-      name="content-source"
+      name="category-getter-method"
       label="Opcja trzecia"
-      value="third-content-source"
+      (input)="handleChangeCategoryGettingStrategy($event)"
+      [value]="categoryGettingStrategies.random"
     />
   </form>
 </app-block>

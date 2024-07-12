@@ -3,12 +3,11 @@
 - [x] header przyklejony do topu
 - [x] logo w headerze linkuje do strony głównej
 - [x] stopka zawsze na dole okna przeglądarki pomimo małej ilości treści
-- [] każda osobna treść w ostatnim bloku powinna być objęta tagiem
-- [] w bloku pierwszym są radiobuttony, ich wybór a następnie kliknięcie przycisku w bloku drugim wykona akcję podmiany lub doklejenia tekstu w bloku ostatnim
-- [] pobieranie treści z pliku JSON
-- [] opcja pierwsza wybierze zawsze treść pierwszą, opcja druga drugą a opcja losowa dowolną z pozostałych
-- [] doklejając treść należy uniknąć powielania już istniejącej treści (w przypadku użycia opcji losowej należy wylosować kolejną jeszcze nie użytą treść)
-- zbudować plik z tablicą przynajmniej 6 elementów zawierających dowolną treść
+- [x] każda osobna treść w ostatnim bloku powinna być objęta tagiem
+- [x] w bloku pierwszym są radiobuttony, ich wybór a następnie kliknięcie przycisku w bloku drugim wykona akcję podmiany lub doklejenia tekstu w bloku ostatnim
+- [] pobieranie treści z pliku JSON (zbudować plik z tablicą przynajmniej 6 elementów zawierających dowolną treść)
+- [x] opcja pierwsza wybierze zawsze treść pierwszą, opcja druga drugą a opcja losowa dowolną z pozostałych
+- [x] doklejając treść należy uniknąć powielania już istniejącej treści (w przypadku użycia opcji losowej należy wylosować kolejną jeszcze nie użytą treść)
 - [x] osadzenie całego zadania w angular
 - [x] brak plików graficznych w końcowym projekcie (brak plików typu jpg, gif, png, svg)
 - [x] CSS IS AWESOME w footerze - po najechaniu myszką ramka (bez tekstu) powinna wykonać animowany obrót
@@ -17,7 +16,7 @@
 - [x] logiczne wykorzystanie jednostek rem, em, vh, vw (w efekcie jak najmniejsze użycie jednostki px) - w taki sposób by w efekcie responsywność spełniona została jak najmniejszą ilością kodu.
 - [x] mobile first
 - [] doklejając treść sprawić by w ostatnim bloku treści były posortowane alfabetycznie
-- [] przy doklejaniu treści w przypadku niemożliwości spełnienia warunku by była unikalna wyświetlić stosowny komunikat (np. alert/dialog/modal)
+- [x] przy doklejaniu treści w przypadku niemożliwości spełnienia warunku by była unikalna wyświetlić stosowny komunikat (np. alert/dialog/modal)
 - [] button w footerze ("pokaż") wysuwający ramkę bez użycia JSa
-- [] automatyczny proces publikowania działającej aplikacji na platformie Vercel
+- [x] automatyczny proces publikowania działającej aplikacji na platformie Vercel
 - [] wykorzystać localStorage do załadowania treści z pliku i ich późniejszego przechowywania oraz napisać dodatkową funkcjonalność pozwalającą na zarządzanie nimi (dodawanie/edycja/usuwanie)

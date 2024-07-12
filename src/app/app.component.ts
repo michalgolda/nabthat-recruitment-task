@@ -6,6 +6,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FirstBlockComponent } from './components/first-block/first-block.component';
 import { SecondBlockComponent } from './components/second-block/second-block.component';
 import { ThirdBlockComponent } from './components/third-block/third-block.component';
+import { CategoryMemoryStorageService } from './services/category-storage/category-memory-storage.service';
+import { MainService } from './services/main/main.service';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +21,7 @@ import { ThirdBlockComponent } from './components/third-block/third-block.compon
     SecondBlockComponent,
     ThirdBlockComponent,
   ],
+  providers: [CategoryMemoryStorageService, MainService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
