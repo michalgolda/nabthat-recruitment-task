@@ -1,0 +1,17 @@
+@import "../../../theme";
+
+.category {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  &__title {
+    color: $text-color;
+    font-weight: 500;
+  }
+
+  &__description {
+    color: $light-grey-color;
+    font-weight: 300;
+  }
+}
