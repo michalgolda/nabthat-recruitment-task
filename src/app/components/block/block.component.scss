@@ -1,16 +1,4 @@
-:host {
-  &:nth-child(1) {
-    flex: 1;
-  }
-
-  &:nth-child(2) {
-    flex: 1;
-  }
-
-  &:nth-child(3) {
-    width: 100%;
-  }
-}
+@import "../../../theme";
 
 .block {
   &__title {
@@ -19,9 +7,17 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
   }
 
   &__content {
     margin-top: 1rem;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 4rem;
+    }
   }
 }
