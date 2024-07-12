@@ -13,6 +13,19 @@
     height: 8.5rem;
   }
 
+  &__square {
+    position: absolute;
+    border: 1px solid $dark-grey-color;
+    width: 7.25rem;
+    height: 7.25rem;
+
+    &:hover {
+      border-color: $hover-color;
+      transform: rotate(360deg);
+      transition: transform 1s;
+    }
+  }
+
   &__text {
     font-size: $h4-font-size;
     color: $dark-grey-color;
@@ -32,16 +45,9 @@
       }
     }
 
-    &--with-border {
-      border: 1px solid $dark-grey-color;
-      width: 7.25rem;
-      height: 7.25rem;
+    &--with-square {
       display: inline-flex;
       align-items: center;
-
-      &:hover {
-        border-color: $hover-color;
-      }
     }
 
     &--copyright {

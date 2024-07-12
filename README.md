@@ -10,8 +10,8 @@
 - [] doklejając treść należy uniknąć powielania już istniejącej treści (w przypadku użycia opcji losowej należy wylosować kolejną jeszcze nie użytą treść)
 - zbudować plik z tablicą przynajmniej 6 elementów zawierających dowolną treść
 - [x] osadzenie całego zadania w angular
-- [] brak plików graficznych w końcowym projekcie (brak plików typu jpg, gif, png, svg)
-- [] CSS IS AWESOME w footerze - po najechaniu myszką ramka (bez tekstu) powinna wykonać animowany obrót
+- [x] brak plików graficznych w końcowym projekcie (brak plików typu jpg, gif, png, svg)
+- [x] CSS IS AWESOME w footerze - po najechaniu myszką ramka (bez tekstu) powinna wykonać animowany obrót
 - [] zastosowanie BEM
 - [] spełnienie zasady a11y
 - [x] logiczne wykorzystanie jednostek rem, em, vh, vw (w efekcie jak najmniejsze użycie jednostki px) - w taki sposób by w efekcie responsywność spełniona została jak najmniejszą ilością kodu.
