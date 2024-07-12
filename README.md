@@ -12,7 +12,7 @@
 - [x] osadzenie całego zadania w angular
 - [x] brak plików graficznych w końcowym projekcie (brak plików typu jpg, gif, png, svg)
 - [x] CSS IS AWESOME w footerze - po najechaniu myszką ramka (bez tekstu) powinna wykonać animowany obrót
-- [] zastosowanie BEM
+- [x] zastosowanie BEM
 - [] spełnienie zasady a11y
 - [x] logiczne wykorzystanie jednostek rem, em, vh, vw (w efekcie jak najmniejsze użycie jednostki px) - w taki sposób by w efekcie responsywność spełniona została jak najmniejszą ilością kodu.
 - [x] mobile first
