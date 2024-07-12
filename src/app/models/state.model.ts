@@ -9,4 +9,5 @@ export enum CategoryGettingStrategy {
 export type State = {
   visibleCategories: Category[];
   categoryGettingStrategy: CategoryGettingStrategy | null;
+  showPersonalData: boolean;
 };

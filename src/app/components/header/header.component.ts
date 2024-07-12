@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LogoComponent } from '../logo/logo.component';
+import { MainService } from '../../services/main/main.service';
 
 @Component({
   selector: 'app-header',
@@ -8,4 +9,6 @@ import { LogoComponent } from '../logo/logo.component';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  constructor(public mainService: MainService) {}
+}

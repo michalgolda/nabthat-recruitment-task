@@ -15,7 +15,9 @@
   </a>
   <span class="header__text"
     >Zadanie <b>rekrutacyjne</b> <br />
-    <span class="header__text--light header__text--author"
+    <span
+      [hidden]="!mainService.state.showPersonalData"
+      class="header__text--light"
       >Michał Gołda</span
     ></span
   >

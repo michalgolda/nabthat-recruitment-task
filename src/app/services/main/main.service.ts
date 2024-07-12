@@ -3,17 +3,19 @@ import { CategoryMemoryStorageService } from '../category-storage/category-memor
 import type { State } from '../../models/state.model';
 import { CategoryGettingStrategy } from '../../models/state.model';
 import type { Category } from '../../models/category.model';
+import { deepCopy } from '../../utils/deep-copy';
 
 const initialState: State = {
   categoryGettingStrategy: null,
   visibleCategories: [],
+  showPersonalData: false,
 };
 
 @Injectable({
   providedIn: 'root',
 })
 export class MainService {
-  public state: State = initialState;
+  public state: State = deepCopy<State>(initialState);
 
   constructor(private categoryStorage: CategoryMemoryStorageService) {}
 
@@ -130,5 +132,13 @@ export class MainService {
 
   checkCategoryVisibility(name: string): boolean {
     return this.state.visibleCategories.some((c) => c.name === name);
+  }
+
+  showPersonalData(): void {
+    this.state.showPersonalData = true;
+  }
+
+  resetState(): void {
+    this.state = deepCopy<State>(initialState);
   }
 }

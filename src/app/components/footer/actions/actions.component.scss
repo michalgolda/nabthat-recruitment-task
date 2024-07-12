@@ -1,0 +1,56 @@
+@import "../../../../theme";
+
+:host {
+  position: relative;
+
+  &:hover .action-list {
+    display: flex;
+  }
+
+  &:hover .action-list-toggle-btn {
+    svg {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.action-list-wrapper {
+  padding-bottom: 2rem;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+}
+
+.action-list {
+  background-color: white;
+  list-style: none;
+  padding: 1rem;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  border-radius: 2px;
+  width: max-content;
+  display: none;
+
+  &:hover,
+  &:has(.action-list-toggle-btn:hover) {
+    display: flex;
+  }
+
+  &__item {
+    cursor: pointer;
+    color: $dark-grey-color;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+.action-list-toggle-btn {
+  svg {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,56 @@
+<div class="action-list-wrapper">
+  <ul class="action-list">
+    <li (click)="handleResetSettings()" class="action-list__item">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1.5em"
+        height="1.5em"
+        viewBox="0 0 12 24"
+      >
+        <path
+          fill="currentColor"
+          fill-rule="evenodd"
+          d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
+        />
+      </svg>
+      Zresetuj ustawienia
+    </li>
+    <li (click)="handleShowPersonaldata()" class="action-list__item">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1.5em"
+        height="1.5em"
+        viewBox="0 0 12 24"
+      >
+        <path
+          fill="currentColor"
+          fill-rule="evenodd"
+          d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
+        />
+      </svg>
+      Pokaż dane osobowe
+    </li>
+  </ul>
+</div>
+<app-button
+  class="action-list-toggle-btn"
+  [bgHoverEffect]="false"
+  [darkBorderColor]="true"
+>
+  Pokaż
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1.5rem"
+    height="1.5rem"
+    viewBox="0 0 24 24"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="m7 10l5 5l5-5"
+    />
+  </svg>
+</app-button>

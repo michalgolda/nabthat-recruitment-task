@@ -58,10 +58,6 @@
     &--light {
       font-weight: 300;
     }
-
-    &--author {
-      display: none;
-    }
   }
 
   @include media-breakpoint-up(md) {
