@@ -1,3 +1,5 @@
+@import "../theme";
+
 .main {
   width: 100%;
   min-height: 100vh;
@@ -12,4 +14,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 2rem;
+
+  @include media-breakpoint-up(md) {
+    column-gap: 5rem;
+  }
 }
