@@ -19,12 +19,28 @@
 
     &--uppercase {
       text-transform: uppercase;
+
+      @include media-breakpoint-up(md) {
+        font-size: $h3-font-size;
+      }
     }
 
     &--hover-effect {
       &:hover {
         cursor: pointer;
         color: $light-grey-color;
+      }
+    }
+
+    &--with-border {
+      border: 1px solid $dark-grey-color;
+      width: 7.25rem;
+      height: 7.25rem;
+      display: inline-flex;
+      align-items: center;
+
+      &:hover {
+        border-color: $hover-color;
       }
     }
 
