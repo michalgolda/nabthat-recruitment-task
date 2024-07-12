@@ -10,6 +10,7 @@
   flex-direction: row;
   column-gap: 0.5rem;
   color: $light-grey-color;
+  white-space: nowrap;
 
   &:focus-within {
     color: $text-color;
