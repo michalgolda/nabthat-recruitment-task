@@ -9,7 +9,12 @@
   align-items: center;
   background-color: $primary-color;
 
+  @include media-breakpoint-up(md) {
+    height: 8.5rem;
+  }
+
   &__text {
+    font-size: $h4-font-size;
     color: $dark-grey-color;
 
     &--uppercase {
@@ -24,7 +29,6 @@
     }
 
     &--copyright {
-      font-size: 1.5rem;
       display: none;
 
       &::after {

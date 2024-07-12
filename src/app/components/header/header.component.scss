@@ -13,9 +13,58 @@
   align-items: center;
   justify-content: space-between;
 
+  &:has(.header__logo:hover) .header__text--author {
+    display: block;
+  }
+
+  &__logo {
+    width: 3rem;
+    height: 3rem;
+    background-color: $secondary-color;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 6.25rem;
+      height: 6.25rem;
+    }
+  }
+
+  &__svg {
+    width: 2rem;
+    height: 2rem;
+
+    @include media-breakpoint-up(md) {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
   &__text {
+    text-align: right;
+
+    @include media-breakpoint-up(md) {
+      font-size: $h3-font-size;
+    }
+
     &--light {
       font-weight: 300;
     }
+
+    &--author {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    height: 8.75rem;
   }
 }

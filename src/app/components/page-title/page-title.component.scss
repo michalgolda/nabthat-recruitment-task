@@ -15,5 +15,9 @@
     height: 1px;
     background-color: $text-color;
     margin: 0.5rem auto;
+
+    @include media-breakpoint-up(md) {
+      margin: 1rem auto;
+    }
   }
 }

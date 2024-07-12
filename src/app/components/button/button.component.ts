@@ -9,4 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() bgHoverEffect: boolean = true;
+  @Input() darkBorderColor: boolean = false;
 }

@@ -24,4 +24,13 @@
       background-color: $hover-color;
     }
   }
+
+  &--dark-border-color {
+    border-color: $dark-grey-color;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: $h6-font-size;
+    padding: 0.75rem 3rem;
+  }
 }

@@ -2,11 +2,11 @@
 
 .block {
   &__title {
-    font-size: 1rem;
     text-transform: uppercase;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    font-size: $h5-font-size;
 
     @include media-breakpoint-up(md) {
       text-align: center;
