@@ -17,6 +17,6 @@
 - [x] mobile first
 - [x] doklejając treść sprawić by w ostatnim bloku treści były posortowane alfabetycznie
 - [x] przy doklejaniu treści w przypadku niemożliwości spełnienia warunku by była unikalna wyświetlić stosowny komunikat (np. alert/dialog/modal)
-- [] button w footerze ("pokaż") wysuwający ramkę bez użycia JSa
+- [x] button w footerze ("pokaż") wysuwający ramkę bez użycia JSa
 - [x] automatyczny proces publikowania działającej aplikacji na platformie Vercel
 - [] wykorzystać localStorage do załadowania treści z pliku i ich późniejszego przechowywania oraz napisać dodatkową funkcjonalność pozwalającą na zarządzanie nimi (dodawanie/edycja/usuwanie)
