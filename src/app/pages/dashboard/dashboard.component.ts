@@ -21,6 +21,13 @@ export class DashboardComponent {
     );
 
     if (categoryName && categoryDescription) {
+      const existingCategory = this.categoryStorage.getByName(categoryName);
+
+      if (existingCategory) {
+        window.alert(`Category "${categoryName}" already exists.`);
+        return;
+      }
+
       this.categoryStorage.create({
         name: categoryName,
         description: categoryDescription,
