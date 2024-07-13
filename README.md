@@ -5,7 +5,7 @@
 - [x] stopka zawsze na dole okna przeglądarki pomimo małej ilości treści
 - [x] każda osobna treść w ostatnim bloku powinna być objęta tagiem
 - [x] w bloku pierwszym są radiobuttony, ich wybór a następnie kliknięcie przycisku w bloku drugim wykona akcję podmiany lub doklejenia tekstu w bloku ostatnim
-- [] pobieranie treści z pliku JSON (zbudować plik z tablicą przynajmniej 6 elementów zawierających dowolną treść)
+- [x] pobieranie treści z pliku JSON (zbudować plik z tablicą przynajmniej 6 elementów zawierających dowolną treść)
 - [x] opcja pierwsza wybierze zawsze treść pierwszą, opcja druga drugą a opcja losowa dowolną z pozostałych
 - [x] doklejając treść należy uniknąć powielania już istniejącej treści (w przypadku użycia opcji losowej należy wylosować kolejną jeszcze nie użytą treść)
 - [x] osadzenie całego zadania w angular
