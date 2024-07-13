@@ -1,14 +1,19 @@
 import { Injectable, afterNextRender } from '@angular/core';
 import { ICategoryStorage } from './category-storage.interface';
 import type { Category } from '../../models/category.model';
+import { HttpClient } from '@angular/common/http';
+import { toArray } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CategoryLocalStorage implements ICategoryStorage {
   private categories: Category[] = [];
+  private categoriesFromFile: Category[] = [];
 
-  constructor() {
+  constructor(private httpClient: HttpClient) {
+    this.getCategoriesFromFile();
+
     afterNextRender(() => {
       this.initializeCategories();
     });
@@ -21,8 +26,7 @@ export class CategoryLocalStorage implements ICategoryStorage {
       return;
     }
 
-    const categoriesFromFile = this.getCategoriesFromFile();
-    this.categories = categoriesFromFile;
+    this.categories = [...this.categoriesFromFile];
     this.syncWithLocalStorage();
   }
 
@@ -33,34 +37,14 @@ export class CategoryLocalStorage implements ICategoryStorage {
     return categories;
   }
 
-  public getCategoriesFromFile(): Category[] {
-    return [
-      {
-        name: 'Technologia',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  private getCategoriesFromFile(): void {
+    this.httpClient.get<Category[]>('/categories.json').subscribe({
+      next: (categories) => {
+        this.categoriesFromFile = categories;
       },
-      {
-        name: 'Sztuczna inteligencja',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      },
-      {
-        name: 'Medycyna',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      },
-      {
-        name: 'Programowanie',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      },
-      {
-        name: 'Biznes',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      },
-    ];
+      error: (error) =>
+        console.error('Error fetching categories from file:', error),
+    });
   }
 
   private syncWithLocalStorage(): void {
@@ -98,7 +82,7 @@ export class CategoryLocalStorage implements ICategoryStorage {
   }
 
   reset(): void {
-    this.categories = this.getCategoriesFromFile();
+    this.categories = [...this.categoriesFromFile];
     this.syncWithLocalStorage();
   }
 }

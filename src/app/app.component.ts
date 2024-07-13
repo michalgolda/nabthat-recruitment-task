@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CategoryLocalStorage } from './services/category-storage/category-local-storage.service';
 import { MainService } from './services/main/main.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
