@@ -23,7 +23,7 @@ export class CategoryListComponent {
     if (categoryName && categoryDescription) {
       const existingCategory = this.categoryStorage.getByName(categoryName);
 
-      if (existingCategory) {
+      if (existingCategory && categoryName !== category.name) {
         window.alert(`Category "${categoryName}" already exists.`);
         return;
       }

@@ -1,7 +1,9 @@
 <app-block title="Blok trzeci z bardzo długim tytułem">
   <div class="category-list">
-    @for (category of mainService.state.visibleCategories; track category) {
+    @for (category of mainService.getVisibleCategories(); track category) {
     <app-category [name]="category.name" [description]="category.description" />
+    } @empty {
+    <p>Brak widocznych kategorii</p>
     }
   </div>
 </app-block>
