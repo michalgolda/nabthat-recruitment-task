@@ -3,9 +3,9 @@
 .main {
   width: 100%;
   min-height: 100vh;
-  padding: 6rem 1rem 1rem 1rem;
+  padding: 5rem 1rem 0rem 1rem;
 
   @include media-breakpoint-up(md) {
-    padding: 12.75rem 4rem 4rem 4rem;
+    padding: 8.75rem 4rem 0rem 4rem;
   }
 }
