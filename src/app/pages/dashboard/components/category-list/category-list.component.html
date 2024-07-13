@@ -4,7 +4,10 @@
     <span class="category-list__name">{{ category.name }}</span>
     <span class="category-list__description">{{ category.description }}</span>
     <div class="category-list__actions">
-      <app-button (click)="handleEditCategory(category)">
+      <app-button
+        (click)="handleEditCategory(category)"
+        ariaLabel="edit category"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1em"
@@ -17,7 +20,10 @@
           />
         </svg>
       </app-button>
-      <app-button (click)="handleDeleteCategory(category.name)">
+      <app-button
+        (click)="handleDeleteCategory(category.name)"
+        ariaLabel="remove category"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="1em"
