@@ -40,13 +40,14 @@ export class CategoryMemoryStorageService implements ICategoryStorage {
     this.categories.push(category);
   }
 
-  update(category: Category): void {
-    const oldCategoryIndex = this.categories.findIndex(
-      (c) => c.name === category.name
-    );
-    if (oldCategoryIndex !== -1) {
-      this.categories[oldCategoryIndex] = category;
+  update(name: string, category: Category): void {
+    const categoryIndex = this.categories.findIndex((c) => c.name === name);
+
+    if (categoryIndex !== -1) {
+      this.categories[categoryIndex] = category;
     }
+
+    console.log(this.categories);
   }
 
   delete(name: string): void {
@@ -55,5 +56,10 @@ export class CategoryMemoryStorageService implements ICategoryStorage {
 
   getAll(): Category[] {
     return this.categories;
+  }
+
+  getByName(name: string): Category | null {
+    const category = this.categories.find((c) => c.name === name);
+    return category ? category : null;
   }
 }

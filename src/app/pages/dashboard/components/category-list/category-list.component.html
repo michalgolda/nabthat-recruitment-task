@@ -1,0 +1,36 @@
+<ul class="category-list">
+  @for (category of categoryStorage.getAll(); track category) {
+  <li class="category-list__item">
+    <span class="category-list__name">{{ category.name }}</span>
+    <span class="category-list__description">{{ category.description }}</span>
+    <div class="category-list__actions">
+      <app-button (click)="handleEditCategory(category)">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z"
+          />
+        </svg>
+      </app-button>
+      <app-button (click)="handleDeleteCategory(category.name)">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M7 21q-.825 0-1.412-.587T5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.587 1.413T17 21zm2-4h2V8H9zm4 0h2V8h-2z"
+          />
+        </svg>
+      </app-button>
+    </div>
+  </li>
+  }
+</ul>
