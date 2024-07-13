@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
-import { CategoryMemoryStorageService } from '../category-storage/category-memory-storage.service';
-import type { State } from '../../models/state.model';
-import { CategoryGettingStrategy } from '../../models/state.model';
-import type { Category } from '../../models/category.model';
-import { deepCopy } from '../../utils/deep-copy';
+import { Injectable, Inject } from '@angular/core';
+import type { State } from '@app/models/state.model';
+import { CategoryGettingStrategy } from '@app/models/state.model';
+import type { Category } from '@app/models/category.model';
+import { deepCopy } from '@app/utils/deep-copy';
+import type { ICategoryStorage } from '@app/services/category-storage/category-storage.interface';
 
 const initialState: State = {
   categoryGettingStrategy: null,
@@ -17,7 +17,9 @@ const initialState: State = {
 export class MainService {
   public state: State = deepCopy<State>(initialState);
 
-  constructor(private categoryStorage: CategoryMemoryStorageService) {}
+  constructor(
+    @Inject('ICategoryStorage') private categoryStorage: ICategoryStorage
+  ) {}
 
   setCategoryGettingStrategy(method: CategoryGettingStrategy): void {
     this.state = {

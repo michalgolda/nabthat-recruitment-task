@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { PageTitleComponent } from '@app/components/page-title/page-title.component';
 import { ButtonComponent } from '@app/components/button/button.component';
 import { CategoryListComponent } from './components/category-list/category-list.component';
-import { CategoryMemoryStorageService } from '@app/services/category-storage/category-memory-storage.service';
+import type { ICategoryStorage } from '@app/services/category-storage/category-storage.interface';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +12,9 @@ import { CategoryMemoryStorageService } from '@app/services/category-storage/cat
   styleUrl: './dashboard.component.scss',
 })
 export class DashboardComponent {
-  constructor(private categoryStorage: CategoryMemoryStorageService) {}
+  constructor(
+    @Inject('ICategoryStorage') private categoryStorage: ICategoryStorage
+  ) {}
 
   handleCreateNewCategory(): void {
     const categoryName = prompt('Enter a new category name');

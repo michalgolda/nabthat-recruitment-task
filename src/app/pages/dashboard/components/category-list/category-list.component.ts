@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { ButtonComponent } from '@app/components/button/button.component';
-import { CategoryMemoryStorageService } from '@app/services/category-storage/category-memory-storage.service';
 import type { Category } from '@app/models/category.model';
+import type { ICategoryStorage } from '@app/services/category-storage/category-storage.interface';
 
 @Component({
   selector: 'app-category-list',
@@ -11,7 +11,10 @@ import type { Category } from '@app/models/category.model';
   styleUrl: './category-list.component.scss',
 })
 export class CategoryListComponent {
-  constructor(public categoryStorage: CategoryMemoryStorageService) {}
+  constructor(
+    @Inject('ICategoryStorage')
+    public categoryStorage: ICategoryStorage
+  ) {}
 
   handleEditCategory(category: Category): void {
     const categoryName = prompt('Enter the new category name', category.name);

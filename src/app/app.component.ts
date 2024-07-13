@@ -9,7 +9,10 @@ import { MainService } from './services/main/main.service';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent],
-  providers: [CategoryMemoryStorageService, MainService],
+  providers: [
+    MainService,
+    { provide: 'ICategoryStorage', useClass: CategoryMemoryStorageService },
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
