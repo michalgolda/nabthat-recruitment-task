@@ -6,4 +6,5 @@ export interface ICategoryStorage {
   delete(name: string): void;
   getAll(): Category[];
   getByName(name: string): Category | null;
+  reset(): void;
 }

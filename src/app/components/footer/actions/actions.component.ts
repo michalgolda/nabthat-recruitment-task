@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { ButtonComponent } from '../../button/button.component';
 import { MainService } from '../../../services/main/main.service';
+import { ICategoryStorage } from '@app/services/category-storage/category-storage.interface';
 
 @Component({
   selector: 'app-actions',
@@ -10,7 +11,10 @@ import { MainService } from '../../../services/main/main.service';
   styleUrl: './actions.component.scss',
 })
 export class ActionsComponent {
-  constructor(private mainService: MainService) {}
+  constructor(
+    private mainService: MainService,
+    @Inject('ICategoryStorage') private categoryStorage: ICategoryStorage
+  ) {}
 
   handleShowPersonaldata(): void {
     this.mainService.showPersonalData();
@@ -18,5 +22,6 @@ export class ActionsComponent {
 
   handleResetSettings(): void {
     this.mainService.resetState();
+    this.categoryStorage.reset();
   }
 }

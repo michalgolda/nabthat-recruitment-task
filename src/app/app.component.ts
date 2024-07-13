@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, InjectionToken } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { CategoryMemoryStorageService } from './services/category-storage/category-memory-storage.service';
+import { CategoryLocalStorage } from './services/category-storage/category-local-storage.service';
 import { MainService } from './services/main/main.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { MainService } from './services/main/main.service';
   imports: [RouterOutlet, HeaderComponent, FooterComponent],
   providers: [
     MainService,
-    { provide: 'ICategoryStorage', useClass: CategoryMemoryStorageService },
+    { provide: 'ICategoryStorage', useClass: CategoryLocalStorage },
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
