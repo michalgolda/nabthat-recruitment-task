@@ -1,26 +1,26 @@
 [
   {
-    "name": "Technologia",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "name": "Technology",
+    "description": "Technology is constantly evolving, driving innovation and change. From artificial intelligence to cutting-edge hardware, it shapes our future. It impacts every aspect of our lives, from communication to transportation. Staying updated with technological trends is essential for both personal and professional growth."
   },
   {
-    "name": "Sztuczna inteligencja",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "name": "Health & Wellness",
+    "description": "Focusing on health and wellness is essential for a fulfilling life. Regular exercise, a balanced diet, and mental health care are key. Preventive care and regular check-ups can lead to a longer, healthier life. Embracing wellness practices can improve overall quality of life and boost longevity."
   },
   {
-    "name": "Medycyna",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "name": "Travel",
+    "description": "Travel opens up new perspectives, allowing us to experience different cultures. It can be an adventure, a journey of self-discovery. Traveling helps to break the monotony of daily life and refresh the mind. It can also foster understanding and tolerance among people from different backgrounds."
   },
   {
-    "name": "Programowanie",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "name": "Education",
+    "description": "Education is the cornerstone of personal and societal growth. It empowers individuals and fosters critical thinking. Lifelong learning can enhance career opportunities and personal development. Education also plays a crucial role in promoting equality and reducing poverty."
   },
   {
-    "name": "Biznes",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "name": "Finance",
+    "description": "Managing finances wisely is crucial for achieving financial stability. Investments, savings, and budgeting are fundamental aspects of finance. Financial literacy can help in making informed decisions and avoiding debt. Planning for the future ensures that financial goals are met, and emergencies are managed."
   },
   {
-    "name": "Kryptowaluty",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "name": "Entertainment",
+    "description": "Entertainment provides an escape from the daily grind. Movies, music, and games bring joy and relaxation to life. It can also be a source of inspiration and creativity. Engaging in various forms of entertainment can enhance social connections and improve mental well-being."
   }
 ]
