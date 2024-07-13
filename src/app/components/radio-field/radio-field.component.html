@@ -1,4 +1,10 @@
-<label class="field">
-  <input class="field__input" type="radio" [value]="value" [name]="name" />
+<label class="field" [htmlFor]="fieldId()">
+  <input
+    [id]="fieldId()"
+    class="field__input"
+    type="radio"
+    [value]="value"
+    [name]="name"
+  />
   {{ label }}</label
 >

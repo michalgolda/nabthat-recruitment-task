@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, computed } from '@angular/core';
 
 @Component({
   selector: 'app-radio-field',
@@ -11,4 +11,5 @@ export class RadioFieldComponent {
   @Input({ required: true }) label: string = '';
   @Input({ required: true }) name: string = '';
   @Input({ required: true }) value: string = '';
+  fieldId = computed(() => `${this.name}-field`);
 }
