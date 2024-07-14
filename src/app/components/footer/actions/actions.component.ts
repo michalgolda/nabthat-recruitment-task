@@ -2,6 +2,7 @@ import { Component, Inject } from '@angular/core';
 import { ButtonComponent } from '../../button/button.component';
 import { MainService } from '../../../services/main/main.service';
 import { ICategoryStorage } from '@app/services/category-storage/category-storage.interface';
+import { CATEGORY_STORAGE } from '@app/services/category-storage';
 
 @Component({
   selector: 'app-actions',
@@ -13,7 +14,7 @@ import { ICategoryStorage } from '@app/services/category-storage/category-storag
 export class ActionsComponent {
   constructor(
     private mainService: MainService,
-    @Inject('ICategoryStorage') private categoryStorage: ICategoryStorage
+    @Inject(CATEGORY_STORAGE) private categoryStorage: ICategoryStorage
   ) {}
 
   handleShowPersonaldata(): void {

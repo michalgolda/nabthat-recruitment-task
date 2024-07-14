@@ -1,7 +1,9 @@
 <button
-  [class.btn--bg-hover-effect]="bgHoverEffect"
-  [class.btn--dark-border-color]="darkBorderColor"
   class="btn"
+  [class]="{
+    'btn--bg-hover-effect': bgHoverEffect,
+    'btn--dark-border-color': darkBorderColor,
+  }"
   [attr.aria-label]="ariaLabel"
 >
   <ng-content></ng-content>

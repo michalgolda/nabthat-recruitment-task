@@ -1,4 +1,4 @@
-import type { Category } from '../../models/category.model';
+import type { Category } from '@app/models/category.model';
 
 export interface ICategoryStorage {
   create(category: Category): void;

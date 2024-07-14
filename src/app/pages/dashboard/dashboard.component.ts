@@ -3,6 +3,7 @@ import { PageTitleComponent } from '@app/components/page-title/page-title.compon
 import { ButtonComponent } from '@app/components/button/button.component';
 import { CategoryListComponent } from './components/category-list/category-list.component';
 import type { ICategoryStorage } from '@app/services/category-storage/category-storage.interface';
+import { CATEGORY_STORAGE } from '@app/services/category-storage';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,7 +14,7 @@ import type { ICategoryStorage } from '@app/services/category-storage/category-s
 })
 export class DashboardComponent {
   constructor(
-    @Inject('ICategoryStorage') private categoryStorage: ICategoryStorage
+    @Inject(CATEGORY_STORAGE) private categoryStorage: ICategoryStorage
   ) {}
 
   handleCreateNewCategory(): void {

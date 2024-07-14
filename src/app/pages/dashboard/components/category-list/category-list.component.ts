@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { ButtonComponent } from '@app/components/button/button.component';
 import type { Category } from '@app/models/category.model';
+import { CATEGORY_STORAGE } from '@app/services/category-storage';
 import type { ICategoryStorage } from '@app/services/category-storage/category-storage.interface';
 
 @Component({
@@ -12,7 +13,7 @@ import type { ICategoryStorage } from '@app/services/category-storage/category-s
 })
 export class CategoryListComponent {
   constructor(
-    @Inject('ICategoryStorage')
+    @Inject(CATEGORY_STORAGE)
     public categoryStorage: ICategoryStorage
   ) {}
 

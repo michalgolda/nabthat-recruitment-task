@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ICategoryStorage } from './category-storage.interface';
-import type { Category } from '../../models/category.model';
+import type { Category } from '@app/models/category.model';
 
 @Injectable({
   providedIn: 'root',

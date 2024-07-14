@@ -4,6 +4,7 @@ import { CategoryGettingStrategy } from '@app/models/state.model';
 import type { Category } from '@app/models/category.model';
 import { deepCopy } from '@app/utils/deep-copy';
 import type { ICategoryStorage } from '@app/services/category-storage/category-storage.interface';
+import { CATEGORY_STORAGE } from '../category-storage';
 
 const initialState: State = {
   categoryGettingStrategy: null,
@@ -18,7 +19,7 @@ export class MainService {
   public state: State = deepCopy<State>(initialState);
 
   constructor(
-    @Inject('ICategoryStorage') private categoryStorage: ICategoryStorage
+    @Inject(CATEGORY_STORAGE) private categoryStorage: ICategoryStorage
   ) {}
 
   setCategoryGettingStrategy(method: CategoryGettingStrategy): void {
