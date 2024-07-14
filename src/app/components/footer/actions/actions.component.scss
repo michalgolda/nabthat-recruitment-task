@@ -1,10 +1,20 @@
 @import "../../../../theme";
 
+@keyframes zIndex {
+  to {
+    z-index: 1;
+  }
+}
+
 :host {
   position: relative;
 
   &:hover .action-list {
-    display: flex;
+    transform: translateY(0);
+    animation-name: zIndex;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.9s;
   }
 
   &:hover .action-list-toggle-btn {
@@ -19,6 +29,7 @@
   position: absolute;
   bottom: 100%;
   right: 0;
+  overflow: hidden;
 
   @include media-breakpoint-up(md) {
     padding-bottom: 2.7rem;
@@ -33,15 +44,19 @@
   row-gap: 0.5rem;
   border-radius: 2px;
   width: max-content;
-  display: none;
+  display: flex;
   box-shadow: -1px 2px 16px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 2px 16px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 2px 16px 0px rgba(0, 0, 0, 0.75);
+  transform: translateY(100vh);
+  transition: transform 1s;
+  z-index: -1;
+  position: relative;
 
-  &:hover,
-  &:has(.action-list-toggle-btn:hover) {
-    display: flex;
-  }
+  // &:hover,
+  // &:has(.action-list-toggle-btn:hover) {
+  //   transform: translateY(0);
+  // }
 
   &__item {
     cursor: pointer;
